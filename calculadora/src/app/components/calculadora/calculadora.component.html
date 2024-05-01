@@ -1,19 +1,17 @@
-<section>
-    <h2>Calculadora</h2>
+<h2>Calculadora</h2>
 
-        <div class="fondo1">
-            <div class="texto">
-                <input type="text" id="resultado" placeholder="0000000000000000" value="{{resultado}}">
-            </div>
+<div class="fondo1">
+    <div class="texto">
+        <input type="text" id="resultado" placeholder="0000000000000000" value="{{resultado}}">
+    </div>
 
-            <div class="fondo2">
-                @for (bt of botones; track bt.id) {
-                    <div>
-                        <input type="button" [value]="bt.valor" (click)="calcular(bt.valor)">
-                    </div>
-                }               
-
-            </div>
-
+    <div class="fondo2">
+        @for (bt of botones; track bt.id) {
+        <div>
+            <input type="button" [value]="bt.valor" (click)="calcular(bt.valor)">
         </div>
-</section>
+        }
+
+    </div>
+
+</div>

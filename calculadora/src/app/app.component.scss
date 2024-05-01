@@ -1,0 +1,29 @@
+/** MAIN */
+
+main {
+    width: 98%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main h2 {
+    width: 65%;
+    text-align: center;
+
+    background-color:rgb(154, 159, 152);
+    color:  rgb(252, 252, 250);
+    border-radius: 1rem;
+}
+
+@media (min-width: 760px) {
+    main h2 {
+        max-width: 22rem;
+        padding: .5rem;
+    }
+}

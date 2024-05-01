@@ -1,6 +1,16 @@
 <app-header-angular />
 <main>
     <app-calculadora />
+    <section>
+        <h2>Operaciones realizadas</h2>
+        @if(operaciones !== undefined){
+            @for (op of operaciones; track operaciones) {
+                <ul>
+                    <li>{{op}}</li>
+                </ul>
+            }
+        }
+    </section>
 </main>
 <app-footer-angular />
 

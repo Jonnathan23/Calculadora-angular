@@ -1,4 +1,6 @@
-import { Component, Output } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { HistorialService } from '../../services/historial.service';
+
 
 @Component({
   selector: 'app-calculadora',
@@ -8,6 +10,7 @@ import { Component, Output } from '@angular/core';
   styleUrl: './calculadora.component.scss'
 })
 export class CalculadoraComponent {
+  
   resultado: string = ""
   botones = [
     {
@@ -75,20 +78,28 @@ export class CalculadoraComponent {
       valor: '÷'
     },
   ]
-  total = 0
+  
+  constructor(private historialService: HistorialService){}
 
   calcular(valor: string){
     //alert('Clic')
     switch(valor){
       case '=':
-        this.resultado = eval( this.resultado); break;
+        this.resultado = eval( this.resultado);
+        this.historialService.set(this.resultado)
+
+        break;
       case 'C':
         this.resultado = ''; break;
       case '÷':
         this.resultado += '/'; break;
+      case 'x':
+        this.resultado += '*'; break
       default:
         this.resultado += valor;
     }
   }
+
+  
 
 }
