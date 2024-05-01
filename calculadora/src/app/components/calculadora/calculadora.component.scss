@@ -20,7 +20,7 @@ header-angular.component.scss.texto {
 
 /** MAIN */
 
-main {
+section {
     width: 98%;
     margin: auto;
 
@@ -32,7 +32,7 @@ main {
 
 }
 
-main h2 {
+section h2 {
     width: 65%;
     text-align: center;
 
@@ -42,7 +42,7 @@ main h2 {
 }
 
 @media (min-width: 760px) {
-    main h2 {
+    section h2 {
         max-width: 22rem;
         padding: .5rem;
     }
