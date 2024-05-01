@@ -1,0 +1,56 @@
+:root {
+    --blanco: rgb(255, 255, 255);
+    --gris_claro: rgb(154, 159, 152);
+    --celeste_bajito: rgb(177, 223, 218);
+    --crema_blanco: rgb(252, 252, 250);
+    --rosa_palido: rgb(215, 169, 176);
+    
+}
+footer {
+    width: 100%;
+    margin-top: 5rem;
+    background-color: rgb(215, 169, 176);
+    box-shadow: 0px 2px 5px 10px rgba(0, 0, 0, 0.18);
+    padding: 3rem;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    color: rgb(252, 252, 250);
+
+}
+
+@media (min-width: 480px) {
+
+    .contactos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .contactos .contac-div {
+        width: 60%;
+        margin: auto;
+
+    }
+
+}
+
+
+.imagen-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagen-footer img {
+    width: 80%;
+}
+
+footer .fecha {
+    color: rgb(252, 252, 250);
+    text-align: center;
+    font-size: 1.5rem;
+}

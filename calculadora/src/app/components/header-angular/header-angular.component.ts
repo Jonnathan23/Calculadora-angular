@@ -25,7 +25,7 @@ export class HeaderAngularComponent {
       activo: false
     },
     {
-      nombre: 'Inicio',
+      nombre: 'Sobre nosotros',
       direccion:'',
       activo: false
     }

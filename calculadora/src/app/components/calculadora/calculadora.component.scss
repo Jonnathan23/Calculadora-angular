@@ -1,0 +1,113 @@
+
+:root {
+    --blanco: rgb(255, 255, 255);
+    --gris_claro: rgb(154, 159, 152);
+    --celeste_bajito: rgb(177, 223, 218);
+    --crema_blanco: rgb(252, 252, 250);
+    --rosa_palido: rgb(215, 169, 176);
+    
+}
+
+header-angular.component.scss.texto {
+    background: #575857;
+    color: #9a9f98;
+    border: 1px solid black;
+    /* Borde alrededor de fondo1 */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+
+}
+
+/** MAIN */
+
+main {
+    width: 98%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main h2 {
+    width: 65%;
+    text-align: center;
+
+    background-color:rgb(154, 159, 152);
+    color:  rgb(252, 252, 250);
+    border-radius: 1rem;
+}
+
+@media (min-width: 760px) {
+    main h2 {
+        max-width: 22rem;
+        padding: .5rem;
+    }
+}
+
+
+/** Calculadora */
+
+
+@media(min-width: 360px) {
+
+
+    .fondo1 {
+        background: #b1dfda;
+        border: 2px solid #4e9189;
+        padding: 10px;
+        display: grid;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        max-width: 200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border-radius: 0.8rem;
+        margin-bottom: 2rem;
+
+        box-shadow: 0px 12px 15px 1px rgba(0, 0, 0, 0.58);
+
+    }
+    .texto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto input[type="text"] {
+        width: 85%;
+        padding: 10px;
+        font-size: 18px;
+        border: 3px solid #9a9f98;
+    }
+
+    .fondo2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+
+    .fondo2 div {
+        text-align: center;
+    }
+
+    .fondo2 input[type="button"] {
+        width: 100%;
+        padding: 15px 0;
+        background-color: #fcfcfa;
+        border: 1px solid #9a9f98;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+
+    .fondo2 input[type="button"]:hover {
+        background-color: #fcfcfa;
+    }
+}
